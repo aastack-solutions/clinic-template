@@ -1,0 +1,186 @@
+@import 'tailwindcss';
+
+@source '../app';
+@source '../components';
+@source '../sections';
+@source '../lib';
+
+/* ---------------------------------------------------------------------------
+   Design tokens
+   ---------------------------------------------------------------------------
+   Tailwind utilities point at CSS variables rather than fixed values. Those
+   variables are written to :root by `lib/theme.ts` and `lib/fonts.ts` from a
+   Server Component, which means the entire visual identity of the site is
+   decided by `clinic.json` at build time with zero client-side theming code.
+
+   `inline` makes Tailwind emit the referenced variable directly in the utility,
+   so `bg-primary-600` compiles to `background-color: var(--c-primary-600)`.
+--------------------------------------------------------------------------- */
+@theme inline {
+  --font-sans: var(--brand-font-body), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: var(--brand-font-display), ui-serif, Georgia, serif;
+
+  --color-primary-50: var(--c-primary-50);
+  --color-primary-100: var(--c-primary-100);
+  --color-primary-200: var(--c-primary-200);
+  --color-primary-300: var(--c-primary-300);
+  --color-primary-400: var(--c-primary-400);
+  --color-primary-500: var(--c-primary-500);
+  --color-primary-600: var(--c-primary-600);
+  --color-primary-700: var(--c-primary-700);
+  --color-primary-800: var(--c-primary-800);
+  --color-primary-900: var(--c-primary-900);
+  --color-primary-950: var(--c-primary-950);
+
+  --color-accent-50: var(--c-accent-50);
+  --color-accent-100: var(--c-accent-100);
+  --color-accent-200: var(--c-accent-200);
+  --color-accent-300: var(--c-accent-300);
+  --color-accent-400: var(--c-accent-400);
+  --color-accent-500: var(--c-accent-500);
+  --color-accent-600: var(--c-accent-600);
+  --color-accent-700: var(--c-accent-700);
+  --color-accent-800: var(--c-accent-800);
+  --color-accent-900: var(--c-accent-900);
+  --color-accent-950: var(--c-accent-950);
+
+  --color-brand: var(--c-primary);
+  --color-accent: var(--c-accent);
+  --color-on-primary: var(--c-on-primary);
+  --color-on-accent: var(--c-on-accent);
+  --color-ink: var(--c-ink);
+  --color-surface: var(--c-surface);
+  --color-muted: var(--c-muted);
+
+  --radius-btn: var(--r-btn);
+  --radius-card: var(--r-card);
+  --radius-panel: var(--r-panel);
+  --radius-pill: var(--r-pill);
+
+  --shadow-soft: 0 1px 2px rgb(16 27 26 / 0.04), 0 8px 24px -12px rgb(16 27 26 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(16 27 26 / 0.04), 0 24px 48px -24px rgb(16 27 26 / 0.22);
+  --shadow-float: 0 32px 80px -32px rgb(16 27 26 / 0.32);
+}
+
+/* Fallbacks so the app still renders if the theme block ever fails to inject. */
+:root {
+  --c-primary: #0e5c5a;
+  --c-accent: #c8a96a;
+  --c-ink: #101b1a;
+  --c-surface: #ffffff;
+  --c-muted: #f7f5f1;
+  --r-btn: 0.875rem;
+  --r-card: 1.5rem;
+  --r-panel: 2rem;
+  --r-pill: 9999px;
+  --header-height: 4.5rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Keeps anchor targets clear of the sticky header. */
+    scroll-padding-top: calc(var(--header-height) + 1.5rem);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--c-surface);
+    color: var(--c-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Nothing in the layout may cause a horizontal scrollbar. */
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-primary-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background-color: var(--c-primary-200);
+    color: var(--c-primary-950);
+  }
+
+  /* Native controls inherit the brand instead of the OS blue. */
+  :root {
+    accent-color: var(--c-primary-600);
+  }
+
+  img,
+  svg,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+}
+
+@layer components {
+  /* A whisper of film grain — stops large gradient fields from banding. */
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.032;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Fades a horizontally scrolling rail into the page edge on mobile. */
+  .edge-fade {
+    mask-image: linear-gradient(to right, transparent, black 24px, black calc(100% - 24px), transparent);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(120deg, var(--c-primary-800), var(--c-primary-600) 48%, var(--c-accent-800));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* Respect the OS-level motion preference across every animation in the app. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

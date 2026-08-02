@@ -1,0 +1,142 @@
+{
+  "_comment": "A deliberately sparse clinic. Half the sections have no data at all — no stats, about, team, technology, gallery, reviews, awards, CTA banner or map. Nothing is stubbed or placeholdered: those sections simply do not exist in the output, the navigation shrinks to match, and the alternating background rhythm recalculates. Use this file to sanity-check the missing-data behaviour after changing the engine.",
+
+  "clinic": {
+    "name": "Riverbend Physiotherapy",
+    "tagline": "Move well again",
+    "shortDescription": "A two-room physiotherapy practice in Bristol focused on stubborn back, knee and shoulder pain.",
+    "type": "Physiotherapy"
+  },
+
+  "theme": {
+    "colors": {
+      "primary": "#1B3A6B",
+      "accent": "#B98A2E",
+      "ink": "#141A22",
+      "surface": "#FFFFFF",
+      "muted": "#F4F6F9"
+    },
+    "fonts": { "display": "playfair", "body": "inter" },
+    "radius": "sharp"
+  },
+
+  "seo": {
+    "title": "Riverbend Physiotherapy — Bristol",
+    "description": "Hands-on physiotherapy in Bristol for back, knee and shoulder pain. 45-minute appointments, no referral needed.",
+    "keywords": ["physiotherapy Bristol", "back pain Bristol", "sports injury clinic"],
+    "siteUrl": "https://www.riverbendphysio.co.uk",
+    "locale": "en_GB"
+  },
+
+  "layout": {
+    "sections": ["hero", "services", "faqs", "contact"],
+    "nav": ["services", "faqs", "contact"]
+  },
+
+  "header": {
+    "topbar": { "enabled": false },
+    "cta": { "label": "Book online", "action": "scroll", "target": "contact", "icon": "CalendarCheck" }
+  },
+
+  "hero": {
+    "headline": "Physiotherapy without the",
+    "headlineAccent": "conveyor belt",
+    "subheadline": "Forty-five minutes, one physiotherapist, hands-on treatment every session. No referral needed and no six-week waiting list.",
+    "ctas": [
+      { "label": "Book an appointment", "action": "scroll", "target": "contact", "variant": "primary", "icon": "CalendarCheck" },
+      { "label": "Call the clinic", "action": "call", "variant": "outline", "icon": "Phone" }
+    ],
+    "highlights": [
+      { "icon": "Clock", "label": "45-minute sessions" },
+      { "icon": "BadgeCheck", "label": "HCPC registered" }
+    ]
+  },
+
+  "services": {
+    "eyebrow": "Treatments",
+    "title": "What we treat",
+    "items": [
+      {
+        "id": "back",
+        "title": "Back & neck pain",
+        "description": "Assessment, manual therapy and a rehabilitation programme you can actually keep up with.",
+        "icon": "Bone",
+        "features": ["Full movement assessment", "Hands-on treatment", "Home programme"],
+        "price": { "from": "£65", "note": "per session" },
+        "duration": "45 min"
+      },
+      {
+        "id": "sports",
+        "title": "Sports injuries",
+        "description": "Return-to-sport rehabilitation for runners, cyclists and racquet-sport players.",
+        "icon": "Activity",
+        "features": ["Gait analysis", "Strength testing", "Graded return plan"],
+        "price": { "from": "£75", "note": "per session" },
+        "duration": "45 min"
+      },
+      {
+        "id": "post-op",
+        "title": "Post-operative rehab",
+        "description": "Structured recovery after knee, hip and shoulder surgery, in step with your surgeon's protocol.",
+        "icon": "HeartPulse",
+        "features": ["Surgeon liaison", "Weekly progression", "Outcome tracking"],
+        "price": { "from": "£70", "note": "per session" },
+        "duration": "45 min"
+      }
+    ]
+  },
+
+  "faqs": {
+    "eyebrow": "Good to know",
+    "title": "Before you book",
+    "items": [
+      {
+        "question": "Do I need a GP referral?",
+        "answer": "No. You can book directly. If we think you need imaging or a consultant opinion, we'll write to your GP for you."
+      },
+      {
+        "question": "How many sessions will I need?",
+        "answer": "Most people need between three and six. We'll give you an honest estimate at the end of your first assessment, and we'd rather discharge you early than keep you coming back."
+      },
+      {
+        "question": "Do you take insurance?",
+        "answer": "Yes — we're recognised by Bupa, AXA Health, Aviva and WPA. Bring your authorisation number to the first appointment."
+      }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Find us",
+    "phones": [{ "number": "+44 117 456 0912" }],
+    "emails": [{ "address": "hello@riverbendphysio.co.uk" }],
+    "address": {
+      "line1": "14 Riverbend Mews",
+      "city": "Bristol",
+      "postalCode": "BS1 6QA",
+      "country": "United Kingdom"
+    },
+    "hours": [
+      { "days": "Monday – Friday", "opens": "07:30", "closes": "19:00", "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] },
+      { "days": "Saturday", "opens": "09:00", "closes": "13:00", "schemaDays": ["Saturday"] },
+      { "days": "Sunday", "closed": true, "schemaDays": ["Sunday"] }
+    ],
+    "form": {
+      "enabled": true,
+      "title": "Request an appointment",
+      "mode": "email",
+      "submitLabel": "Send request",
+      "fields": [
+        { "name": "name", "label": "Name", "type": "text", "required": true, "span": "half" },
+        { "name": "phone", "label": "Phone", "type": "tel", "required": true, "span": "half" },
+        { "name": "message", "label": "What's bothering you?", "type": "textarea", "span": "full" }
+      ]
+    }
+  },
+
+  "social": [],
+
+  "footer": {
+    "legalLinks": [{ "label": "Privacy policy", "action": "link", "href": "/privacy" }]
+  }
+}

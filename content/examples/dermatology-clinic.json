@@ -1,0 +1,343 @@
+{
+  "_comment": "A second full clinic. Same engine, zero component changes: different brand colours, different typeface pairing, rounder geometry, a reordered section list (reviews promoted above the team), an endpoint-backed form instead of WhatsApp, and no gallery or awards data.",
+
+  "clinic": {
+    "name": "Aster Skin & Laser",
+    "legalName": "Aster Dermatology Group Ltd",
+    "tagline": "Dermatology, considered",
+    "shortDescription": "Consultant-led medical and cosmetic dermatology in Melbourne, with same-week access for suspicious lesions.",
+    "description": "Aster Skin & Laser is a consultant-led dermatology clinic in South Yarra, Melbourne, offering skin cancer surveillance, medical dermatology, laser treatment and injectables.",
+    "established": "2016",
+    "type": "Dermatology",
+    "priceRange": "$$$"
+  },
+
+  "theme": {
+    "colors": {
+      "primary": "#8C4A63",
+      "accent": "#3F6E63",
+      "ink": "#1A1418",
+      "surface": "#FFFFFF",
+      "muted": "#FAF6F5"
+    },
+    "fonts": { "display": "jakarta", "body": "inter" },
+    "radius": "round"
+  },
+
+  "seo": {
+    "title": "Aster Skin & Laser — Consultant Dermatology, Melbourne",
+    "titleTemplate": "%s | Aster Skin & Laser",
+    "description": "Consultant-led dermatology in South Yarra. Full-body skin checks, mole mapping, laser and medical dermatology. Same-week appointments for suspicious lesions.",
+    "keywords": ["dermatologist Melbourne", "skin check South Yarra", "mole mapping Melbourne", "laser dermatology"],
+    "siteUrl": "https://www.asterskin.com.au",
+    "ogImage": { "src": "https://picsum.photos/seed/aster-og/1200/630", "width": 1200, "height": 630 },
+    "locale": "en_AU"
+  },
+
+  "layout": {
+    "sections": ["hero", "stats", "services", "about", "testimonials", "doctors", "technologies", "whyChooseUs", "faqs", "ctaBanner", "contact", "map"],
+    "nav": ["services", "about", "doctors", "technologies", "faqs", "contact"],
+    "stickyHeader": true,
+    "showFloatingActions": true
+  },
+
+  "header": {
+    "topbar": {
+      "enabled": true,
+      "message": "Same-week appointments for suspicious lesions",
+      "showPhone": true,
+      "showHours": false
+    },
+    "cta": { "label": "Book a skin check", "action": "scroll", "target": "contact", "icon": "CalendarCheck" }
+  },
+
+  "hero": {
+    "badge": "South Yarra · Consultant-led",
+    "headline": "Skin health, taken",
+    "headlineAccent": "seriously",
+    "subheadline": "Every appointment is with a specialist dermatologist — never a delegate. Full-body checks, dermoscopy and same-week access when something looks wrong.",
+    "image": { "src": "https://picsum.photos/seed/aster-hero/1200/1500", "alt": "A consultation room at Aster Skin & Laser" },
+    "secondaryImage": { "src": "https://picsum.photos/seed/aster-detail/600/600", "alt": "Dermoscopy equipment" },
+    "ctas": [
+      { "label": "Book a skin check", "action": "scroll", "target": "contact", "variant": "primary", "icon": "CalendarCheck" },
+      { "label": "Call us", "action": "call", "variant": "outline", "icon": "Phone" }
+    ],
+    "highlights": [
+      { "icon": "BadgeCheck", "label": "FACD-accredited specialists" },
+      { "icon": "Timer", "label": "Same-week urgent access" }
+    ],
+    "rating": { "score": 4.8, "count": 340, "source": "Google" },
+    "floatingCard": { "icon": "Scan", "title": "Total body photography", "subtitle": "Baseline imaging in 20 minutes" }
+  },
+
+  "stats": {
+    "items": [
+      { "value": 9, "suffix": " yrs", "label": "Caring for Melbourne skin", "icon": "CalendarDays" },
+      { "value": 24000, "suffix": "+", "label": "Skin checks completed", "icon": "Scan" },
+      { "value": 4.8, "decimals": 1, "suffix": "/5", "label": "Patient rating", "icon": "Star" }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "The practice",
+    "title": "Specialist care, without the wait",
+    "paragraphs": [
+      "Aster was founded in 2016 to fix a specific problem: the gap between noticing something on your skin and seeing someone qualified to judge it. We hold urgent slots open every day for exactly that.",
+      "Medical dermatology, surgical excision, laser and cosmetic treatment all happen in the same rooms with the same specialists, so nothing gets referred out and lost."
+    ],
+    "images": [
+      { "src": "https://picsum.photos/seed/aster-about-1/900/1125", "alt": "The Aster Skin & Laser waiting area" }
+    ],
+    "highlights": [
+      { "icon": "Microscope", "title": "On-site histopathology liaison", "description": "Results discussed with you within five working days, always by phone." },
+      { "icon": "ShieldCheck", "title": "Specialists only", "description": "Every consultation is with a Fellow of the Australasian College of Dermatologists." }
+    ],
+    "ctas": []
+  },
+
+  "services": {
+    "eyebrow": "Treatments",
+    "title": "What we do",
+    "description": "Medical and cosmetic dermatology under one roof.",
+    "items": [
+      {
+        "id": "skin-checks",
+        "title": "Skin checks & mole mapping",
+        "description": "Full-body dermoscopic examination with total body photography for high-risk patients.",
+        "icon": "Scan",
+        "image": { "src": "https://picsum.photos/seed/aster-check/900/900", "alt": "Dermoscopic skin examination" },
+        "features": ["Total body photography", "Digital dermoscopy", "Annual recall reminders"],
+        "price": { "from": "From $220" },
+        "duration": "30 min",
+        "featured": true
+      },
+      {
+        "id": "acne",
+        "title": "Acne & rosacea",
+        "description": "Evidence-based medical management for skin that has not responded to over-the-counter treatment.",
+        "icon": "Droplet",
+        "features": ["Isotretinoin management", "Rosacea protocols", "Scar treatment"],
+        "price": { "from": "From $180" },
+        "duration": "30 min"
+      },
+      {
+        "id": "laser",
+        "title": "Laser & light therapy",
+        "description": "Vascular, pigment and resurfacing lasers, always operated by a dermatologist.",
+        "icon": "Zap",
+        "features": ["Pigment & vascular lasers", "Fractional resurfacing", "Test patch first"],
+        "price": { "from": "From $350" },
+        "duration": "45 min"
+      },
+      {
+        "id": "surgery",
+        "title": "Skin surgery",
+        "description": "Excision of skin cancers and lesions with careful attention to the cosmetic result.",
+        "icon": "Activity",
+        "features": ["Same-day excision", "Histopathology included", "Scar review at 6 weeks"],
+        "price": { "from": "From $600" },
+        "duration": "60 min"
+      },
+      {
+        "id": "eczema",
+        "title": "Eczema & psoriasis",
+        "description": "Long-term management including biologics for moderate to severe disease.",
+        "icon": "Leaf",
+        "features": ["Biologic therapy", "Phototherapy", "Paediatric eczema"],
+        "price": { "from": "From $180" },
+        "duration": "30 min"
+      }
+    ],
+    "ctas": []
+  },
+
+  "whyChooseUs": {
+    "eyebrow": "Why Aster",
+    "title": "What you can expect from us",
+    "items": [
+      { "icon": "UserRound", "title": "Always a specialist", "description": "Never a registrar, never a nurse-led substitute." },
+      { "icon": "Timer", "title": "Urgent slots held daily", "description": "If something has changed, we will see you this week." },
+      { "icon": "Phone", "title": "Results by phone", "description": "Every biopsy result is delivered by a doctor, not a portal notification." },
+      { "icon": "Eye", "title": "Photographic records", "description": "Baseline images mean next year's comparison is objective, not remembered." }
+    ],
+    "ctas": []
+  },
+
+  "doctors": {
+    "eyebrow": "Specialists",
+    "title": "Who you'll see",
+    "items": [
+      {
+        "id": "j-okafor",
+        "name": "Dr. Ify Okafor",
+        "role": "Consultant Dermatologist",
+        "credentials": "MBBS, FACD",
+        "bio": "Ify leads the skin cancer surveillance programme and has a special interest in dermoscopy of difficult lesions.",
+        "image": { "src": "https://i.pravatar.cc/800?img=48", "alt": "Dr. Ify Okafor" },
+        "specialties": ["Skin cancer", "Dermoscopy"],
+        "languages": ["English"],
+        "experienceYears": 18,
+        "socials": []
+      },
+      {
+        "id": "l-tran",
+        "name": "Dr. Linh Tran",
+        "role": "Consultant Dermatologist",
+        "credentials": "MBBS, FACD, MPH",
+        "bio": "Linh runs our laser and cosmetic dermatology service alongside a busy acne and rosacea clinic.",
+        "image": { "src": "https://i.pravatar.cc/800?img=26", "alt": "Dr. Linh Tran" },
+        "specialties": ["Laser therapy", "Acne & rosacea"],
+        "languages": ["English", "Vietnamese"],
+        "experienceYears": 11,
+        "socials": []
+      }
+    ],
+    "ctas": []
+  },
+
+  "technologies": {
+    "eyebrow": "Technology",
+    "title": "How we look closer",
+    "items": [
+      {
+        "name": "Total body photography",
+        "description": "A 92-image baseline of your skin, so next year's check compares photographs rather than memory.",
+        "icon": "Camera",
+        "benefits": ["Detects change at millimetre scale", "Reduces unnecessary excisions", "Images retained for ten years"]
+      },
+      {
+        "name": "Digital dermoscopy",
+        "description": "Polarised magnification with sequential imaging for lesions we want to watch rather than remove.",
+        "icon": "Microscope",
+        "benefits": ["Side-by-side comparison over time", "Fewer biopsies of benign lesions"]
+      }
+    ]
+  },
+
+  "testimonials": {
+    "eyebrow": "Patient stories",
+    "title": "In their words",
+    "summary": { "averageRating": 4.8, "totalReviews": 340, "source": "Google" },
+    "items": [
+      {
+        "id": "a1",
+        "name": "Dan Whitlock",
+        "quote": "I called on a Tuesday about a mole that had changed. I was seen Thursday, it was excised the following week, and it was a melanoma in situ. I don't think I'd have got that anywhere else in under two months.",
+        "rating": 5,
+        "location": "Prahran",
+        "treatment": "Skin cancer surgery",
+        "date": "2025-10-04"
+      },
+      {
+        "id": "a2",
+        "name": "Sophie Marchetti",
+        "quote": "Fifteen years of rosacea and three GPs. Dr. Tran changed one thing about my routine and it was noticeably better within six weeks.",
+        "rating": 5,
+        "location": "South Yarra",
+        "treatment": "Rosacea management",
+        "date": "2025-08-22"
+      },
+      {
+        "id": "a3",
+        "name": "Marcus Bell",
+        "quote": "The baseline photographs are the thing. Last year's images sat on screen next to this year's and the decision took thirty seconds.",
+        "rating": 4.5,
+        "location": "Toorak",
+        "treatment": "Mole mapping",
+        "date": "2025-06-15"
+      }
+    ]
+  },
+
+  "faqs": {
+    "eyebrow": "Good to know",
+    "title": "Common questions",
+    "items": [
+      {
+        "question": "Do I need a referral?",
+        "answer": "You can be seen without one, but a GP referral means you can claim a Medicare rebate on the consultation. We're happy to see you either way."
+      },
+      {
+        "question": "How long does a full skin check take?",
+        "answer": "Around 30 minutes for a standard check, or 45 if you're having total body photography for the first time."
+      },
+      {
+        "question": "What happens if you find something?",
+        "answer": "In most cases we can biopsy or excise the same day. Histopathology results come back within five working days and are always delivered to you by phone, by a doctor."
+      }
+    ],
+    "ctas": []
+  },
+
+  "ctaBanner": {
+    "eyebrow": "Next step",
+    "title": "Book the skin check you've been meaning to book",
+    "description": "Thirty minutes, once a year. It's the single most useful thing you can do for your skin.",
+    "ctas": [
+      { "label": "Request an appointment", "action": "scroll", "target": "contact", "variant": "primary", "icon": "CalendarCheck" }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Visit the clinic",
+    "description": "Level 2, on Toorak Road — two minutes from South Yarra station.",
+    "phones": [{ "number": "+61 3 9826 4410", "label": "Reception" }],
+    "emails": [{ "address": "reception@asterskin.com.au" }],
+    "address": {
+      "line1": "Level 2, 480 Toorak Road",
+      "city": "South Yarra, VIC",
+      "postalCode": "3141",
+      "country": "Australia"
+    },
+    "mapEmbedUrl": "https://maps.google.com/maps?q=-37.8397,145.0011&z=15&output=embed",
+    "coordinates": { "lat": -37.8397, "lng": 145.0011 },
+    "hours": [
+      { "days": "Monday – Friday", "opens": "08:30", "closes": "17:30", "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"] },
+      { "days": "Saturday", "opens": "09:00", "closes": "13:00", "schemaDays": ["Saturday"] },
+      { "days": "Sunday", "closed": true, "schemaDays": ["Sunday"] }
+    ],
+    "emergencyNote": "Noticed a lesion that is bleeding, changing or new? Call reception and say so — we hold urgent slots every weekday.",
+    "form": {
+      "enabled": true,
+      "title": "Request an appointment",
+      "description": "We'll come back to you the same working day.",
+      "mode": "endpoint",
+      "endpointUrl": "https://api.asterskin.com.au/v1/appointment-requests",
+      "submitLabel": "Send request",
+      "successMessage": "Thank you — reception will call you today to confirm a time.",
+      "consentText": "Your details are stored in our clinical system and used only to arrange your care.",
+      "fields": [
+        { "name": "name", "label": "Full name", "type": "text", "required": true, "span": "half" },
+        { "name": "phone", "label": "Phone", "type": "tel", "required": true, "span": "half" },
+        { "name": "email", "label": "Email", "type": "email", "required": true, "span": "half" },
+        { "name": "referral", "label": "Do you have a referral?", "type": "select", "options": ["Yes", "No", "Not sure"], "span": "half" },
+        { "name": "reason", "label": "Reason for visit", "type": "textarea", "span": "full" }
+      ]
+    },
+    "ctas": []
+  },
+
+  "map": { "height": 420 },
+
+  "social": [
+    { "platform": "instagram", "url": "https://www.instagram.com/asterskin" },
+    { "platform": "facebook", "url": "https://www.facebook.com/asterskin" }
+  ],
+
+  "footer": {
+    "description": "Consultant-led medical and cosmetic dermatology in South Yarra, Melbourne.",
+    "columns": [
+      {
+        "title": "Treatments",
+        "links": [
+          { "label": "Skin checks", "action": "scroll", "target": "services" },
+          { "label": "Laser therapy", "action": "scroll", "target": "services" },
+          { "label": "Skin surgery", "action": "scroll", "target": "services" }
+        ]
+      }
+    ],
+    "legalLinks": [{ "label": "Privacy policy", "action": "link", "href": "/privacy" }],
+    "note": "Information on this website is general and does not replace a consultation with a dermatologist."
+  }
+}

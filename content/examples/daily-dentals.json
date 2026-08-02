@@ -1,0 +1,434 @@
+{
+  "_source": "Built from the clinic's public Google Business Profile and Google reviews (5.0 from 57 reviews, captured Feb 2026). Only facts visible on that profile were used.",
+
+  "_todo": [
+    "CONFIRM opening hours — Google only shows 'Opens 3:30 pm Mon'. The closing time and the weekly pattern below are a placeholder.",
+    "CONFIRM the WhatsApp number — assumed to be the same as the mobile 0300 0752362 (+92 300 0752362).",
+    "ADD an email address — none is listed on Google, so the email CTA is currently omitted.",
+    "ADD the real domain in seo.siteUrl — currently a placeholder.",
+    "ADD the Facebook and Instagram URLs — Google shows both profiles exist but not their handles.",
+    "ADD photos to public/images/daily-dentals/ (hero.jpg, clinic-1.jpg, clinic-2.jpg). Until they exist the site shows branded placeholders.",
+    "CONFIRM Dr. Maliha's full name, qualifications and years of experience.",
+    "CONFIRM the full treatment list — the four services below are the ones evidenced by reviews. Add the rest.",
+    "GET written consent from the reviewers before publishing their names, or shorten to first name + initial."
+  ],
+
+  "clinic": {
+    "name": "Daily Dentals",
+    "tagline": "Dental care, G-11 Markaz",
+    "shortDescription": "A dental clinic in G-11 Markaz, Islamabad, known for a clean, modern setup and a team that explains every step before it happens.",
+    "description": "Daily Dentals is a dental clinic in G-11 Markaz, Islamabad, offering braces and orthodontic treatment, scaling and polishing, fillings and routine dental care. Rated 5.0 from 57 Google reviews.",
+    "type": "Dentist"
+  },
+
+  "theme": {
+    "colors": {
+      "primary": "#0D5C63",
+      "accent": "#C6A15B",
+      "ink": "#0F1A1B",
+      "surface": "#FFFFFF",
+      "muted": "#F6F4F0"
+    },
+    "fonts": { "display": "fraunces", "body": "jakarta" },
+    "radius": "soft"
+  },
+
+  "seo": {
+    "title": "Daily Dentals — Dental Clinic in G-11 Markaz, Islamabad",
+    "titleTemplate": "%s | Daily Dentals",
+    "description": "Dental clinic in G-11 Markaz, Islamabad. Braces and orthodontics with Dr. Maliha, scaling and polishing, fillings and routine care. Rated 5.0 from 57 Google reviews.",
+    "keywords": [
+      "dentist G-11 Islamabad",
+      "dental clinic Islamabad",
+      "braces Islamabad",
+      "orthodontist G-11 Markaz",
+      "teeth scaling and polishing Islamabad",
+      "tooth filling Islamabad"
+    ],
+    "siteUrl": "https://www.dailydentals.pk",
+    "locale": "en_PK",
+    "language": "en"
+  },
+
+  "layout": {
+    "sections": ["hero", "stats", "services", "about", "whyChooseUs", "doctors", "testimonials", "faqs", "ctaBanner", "contact", "map"],
+    "nav": ["services", "about", "doctors", "testimonials", "faqs", "contact"],
+    "stickyHeader": true,
+    "showFloatingActions": true,
+    "alternateBackgrounds": true
+  },
+
+  "header": {
+    "topbar": {
+      "enabled": true,
+      "message": "G-11 Markaz, Islamabad — above Soneri Bank, Silver City Plaza",
+      "showPhone": true,
+      "showHours": true
+    },
+    "cta": {
+      "label": "Book appointment",
+      "action": "whatsapp",
+      "variant": "primary",
+      "icon": "MessageCircle"
+    }
+  },
+
+  "hero": {
+    "badge": "G-11 Markaz · 5.0 on Google",
+    "headline": "Dental care where everything is",
+    "headlineAccent": "explained first",
+    "subheadline": "Patients tell us the same thing again and again: they knew exactly what was happening at every step. Braces, scaling, fillings and routine care in a clean, modern clinic in G-11 Markaz.",
+    "image": {
+      "src": "/images/daily-dentals/hero.jpg",
+      "alt": "The treatment room at Daily Dentals, G-11 Markaz"
+    },
+    "secondaryImage": {
+      "src": "/images/daily-dentals/clinic-1.jpg",
+      "alt": "Reception at Daily Dentals"
+    },
+    "ctas": [
+      { "label": "Book on WhatsApp", "action": "whatsapp", "variant": "primary", "icon": "MessageCircle" },
+      { "label": "Call the clinic", "action": "call", "variant": "outline", "icon": "Phone" }
+    ],
+    "highlights": [
+      { "icon": "Star", "label": "5.0 from 57 Google reviews" },
+      { "icon": "Sparkles", "label": "Clean, modern clinic" },
+      { "icon": "HeartHandshake", "label": "Every step explained" }
+    ],
+    "rating": { "score": 5.0, "count": 57, "source": "Google" },
+    "floatingCard": {
+      "icon": "Smile",
+      "title": "Braces & orthodontics",
+      "subtitle": "Monthly adjustments with Dr. Maliha"
+    }
+  },
+
+  "stats": {
+    "items": [
+      { "value": 5, "decimals": 1, "suffix": "/5", "label": "Google rating", "icon": "Star" },
+      { "value": 57, "label": "Google reviews, none below five stars", "icon": "MessageCircle" }
+    ]
+  },
+
+  "services": {
+    "eyebrow": "Treatments",
+    "title": "What we do",
+    "description": "Routine dental care and orthodontic treatment, all in one clinic in G-11 Markaz.",
+    "navLabel": "Services",
+    "items": [
+      {
+        "id": "braces",
+        "title": "Braces & orthodontics",
+        "description": "Fixed braces for teenagers and adults, with monthly adjustments and a clear explanation of what changes at each visit.",
+        "icon": "Smile",
+        "image": {
+          "src": "/images/daily-dentals/braces.jpg",
+          "alt": "Orthodontic treatment at Daily Dentals"
+        },
+        "features": ["Monthly adjustment appointments", "Progress explained at every visit", "Treatment with Dr. Maliha"],
+        "featured": true,
+        "cta": { "label": "Ask about braces", "action": "whatsapp", "variant": "ghost", "message": "Assalam-o-alaikum, I would like to ask about braces treatment at Daily Dentals." }
+      },
+      {
+        "id": "scaling",
+        "title": "Scaling & polishing",
+        "description": "A thorough clean to remove plaque and staining, finished with polishing so the result lasts.",
+        "icon": "Sparkles",
+        "features": ["Full scaling", "Stain removal & polishing", "Aftercare advice"]
+      },
+      {
+        "id": "fillings",
+        "title": "Tooth fillings",
+        "description": "Cavities treated and restored, with the procedure walked through before it begins.",
+        "icon": "Shield",
+        "features": ["Procedure explained first", "Comfortable throughout", "Same-visit restoration"]
+      },
+      {
+        "id": "check-up",
+        "title": "Check-up & consultation",
+        "description": "An examination and an honest assessment of what — if anything — needs doing.",
+        "icon": "Stethoscope",
+        "features": ["Full examination", "Clear treatment options", "No pressure to proceed"]
+      }
+    ],
+    "ctas": [
+      {
+        "label": "Not sure what you need? Message us",
+        "action": "whatsapp",
+        "variant": "outline",
+        "icon": "MessageCircle"
+      }
+    ]
+  },
+
+  "about": {
+    "eyebrow": "About the clinic",
+    "title": "A clinic patients keep coming back to",
+    "navLabel": "About",
+    "paragraphs": [
+      "Daily Dentals is on the first floor of Silver City Plaza in G-11 Markaz, above Soneri Bank. It is a small clinic, and that is the point — appointments are unrushed and you see the same dentist each time.",
+      "Read through our reviews and the same words come up: clean, cooperative, and explained clearly. Several patients have been through a full year of monthly orthodontic appointments with us and still describe the experience as consistently good."
+    ],
+    "images": [
+      { "src": "/images/daily-dentals/clinic-2.jpg", "alt": "Inside Daily Dentals" }
+    ],
+    "highlights": [
+      {
+        "icon": "Sparkles",
+        "title": "Clean and well-organised",
+        "description": "The most repeated phrase in our reviews. The clinic is kept modern, tidy and properly equipped."
+      },
+      {
+        "icon": "Info",
+        "title": "Nothing happens without an explanation",
+        "description": "You will be told what is being done and why, before it starts — not after."
+      },
+      {
+        "icon": "Users",
+        "title": "A cooperative team",
+        "description": "Patients describe the staff as polite and thoughtful about the concerns they raise."
+      },
+      {
+        "icon": "Heart",
+        "title": "Comfortable treatment",
+        "description": "Reviews repeatedly use the words efficient and painless. That is what we aim for every time."
+      }
+    ],
+    "ctas": [
+      { "label": "Meet Dr. Maliha", "action": "scroll", "target": "team", "variant": "outline", "icon": "ArrowRight" }
+    ]
+  },
+
+  "whyChooseUs": {
+    "eyebrow": "Why Daily Dentals",
+    "title": "Fifty-seven reviews, not one below five stars",
+    "description": "We would rather let patients describe the clinic than describe it ourselves. These are the themes that come up most.",
+    "navLabel": "Why us",
+    "items": [
+      { "icon": "Info", "title": "Explained at every step", "description": "The single most mentioned thing in our reviews — you always know what is happening." },
+      { "icon": "Sparkles", "title": "Clean environment", "description": "A modern, well-organised clinic that patients notice the moment they walk in." },
+      { "icon": "Users", "title": "Cooperative team", "description": "Polite, patient and willing to take the time your questions need." },
+      { "icon": "Heart", "title": "Comfortable treatment", "description": "Procedures handled carefully — reviews describe them as efficient and painless." },
+      { "icon": "CalendarCheck", "title": "Consistent over the long term", "description": "Orthodontic patients who visited monthly for over a year report the same experience throughout." },
+      { "icon": "MapPin", "title": "Easy to reach", "description": "First floor, Silver City Plaza, right in G-11 Markaz above Soneri Bank." }
+    ],
+    "ctas": [
+      { "label": "Book an appointment", "action": "whatsapp", "variant": "primary", "icon": "MessageCircle" }
+    ]
+  },
+
+  "doctors": {
+    "eyebrow": "The team",
+    "title": "Who you'll see",
+    "navLabel": "Our team",
+    "items": [
+      {
+        "id": "dr-maliha",
+        "name": "Dr. Maliha",
+        "role": "Dentist & Orthodontist",
+        "bio": "Dr. Maliha leads orthodontic treatment at Daily Dentals and is named in the majority of our reviews. Patients consistently describe her as thorough, gentle, and clear about what is happening at every adjustment.",
+        "image": { "src": "/images/daily-dentals/dr-maliha.jpg", "alt": "Dr. Maliha" },
+        "specialties": ["Braces & orthodontics", "Scaling & polishing", "Fillings"],
+        "socials": [],
+        "cta": {
+          "label": "Book with Dr. Maliha",
+          "action": "whatsapp",
+          "variant": "ghost",
+          "message": "Assalam-o-alaikum, I would like to book an appointment with Dr. Maliha."
+        }
+      }
+    ],
+    "ctas": []
+  },
+
+  "testimonials": {
+    "eyebrow": "Patient reviews",
+    "title": "What patients say on Google",
+    "navLabel": "Reviews",
+    "summary": {
+      "averageRating": 5.0,
+      "totalReviews": 57,
+      "source": "Google",
+      "url": "https://www.google.com/maps/search/?api=1&query=Daily+Dentals+G-11+Markaz+Islamabad"
+    },
+    "items": [
+      {
+        "id": "r-sidra",
+        "name": "Sidra Awan",
+        "quote": "I am currently halfway through my braces treatment with Dr. Maliha, and I couldn't be happier with the progress. She is incredibly good at her work and always takes the time to explain what she's doing at every adjustment.",
+        "rating": 5,
+        "treatment": "Braces"
+      },
+      {
+        "id": "r-usman",
+        "name": "Muhammad Usman",
+        "quote": "The clinic is clean, well-organized, and equipped with modern facilities. The staff is very cooperative and professional, making patients feel comfortable from start to finish. Highly recommended for anyone looking for quality dental treatment in Islamabad.",
+        "rating": 5,
+        "treatment": "General dentistry"
+      },
+      {
+        "id": "r-areesha",
+        "name": "Areesha Abid",
+        "quote": "I visited Daily Dentals for over a year with regular monthly appointments, and the experience was consistently excellent. I had my braces treatment there and I am extremely happy with how beautifully aligned my teeth look now.",
+        "rating": 5,
+        "treatment": "Braces"
+      },
+      {
+        "id": "r-zoobia",
+        "name": "Zoobia Imran",
+        "quote": "The treatment was thorough, gentle and clearly explained at every step. Dr. Maliha was professional and attentive, and the staff made me feel comfortable throughout the visit.",
+        "rating": 5,
+        "treatment": "General dentistry"
+      },
+      {
+        "id": "r-aqsa",
+        "name": "Aqsa Khalid",
+        "quote": "I had a tooth filling done and my experience was very good. The clinic was clean and well-maintained, and the staff was polite and cooperative. Dr. Maliha explained the procedure clearly and made me feel comfortable throughout.",
+        "rating": 5,
+        "treatment": "Tooth filling"
+      },
+      {
+        "id": "r-asif",
+        "name": "Asif Mehmood",
+        "quote": "Really happy with my visit to Daily Dentals. Got my scaling and polishing done and they did an amazing job. Definitely coming back!",
+        "rating": 5,
+        "treatment": "Scaling & polishing"
+      },
+      {
+        "id": "r-kanza",
+        "name": "Kanza Khan",
+        "quote": "Really friendly and professional team. The clinic is clean, modern and up to date. Dr. Maliha made me feel completely at ease. Everything was explained clearly, and the treatment was quick and painless.",
+        "rating": 5,
+        "treatment": "General dentistry"
+      },
+      {
+        "id": "r-abbas",
+        "name": "Abbas Ahmed",
+        "quote": "A friendly and professional team, with a clean, modern facility. The doctor provided a comfortable experience, explaining everything clearly, and the treatment was efficient and painless.",
+        "rating": 5,
+        "treatment": "General dentistry"
+      }
+    ]
+  },
+
+  "faqs": {
+    "eyebrow": "Good to know",
+    "title": "Before you visit",
+    "description": "Anything else — message us on WhatsApp and we'll answer.",
+    "navLabel": "FAQs",
+    "items": [
+      {
+        "question": "Where exactly is the clinic?",
+        "answer": "Office #2, first floor, Silver City Plaza, G-11 Markaz, Islamabad — directly above Soneri Bank. Use the 'Get directions' link on this page and it will take you to the entrance."
+      },
+      {
+        "question": "How do I book an appointment?",
+        "answer": "The quickest way is WhatsApp — send us a message with what you need and a rough time that suits you, and we'll confirm. You can also call the clinic directly on 0300 0752362."
+      },
+      {
+        "question": "Do you treat braces cases from start to finish?",
+        "answer": "Yes. Orthodontic treatment runs with monthly adjustment appointments, and Dr. Maliha explains what has changed and what comes next at each one."
+      },
+      {
+        "question": "Will the treatment hurt?",
+        "answer": "Our reviews describe treatment here as efficient and painless more often than any other phrase. Tell us if you are anxious when you book and we will take extra time to talk you through it first."
+      },
+      {
+        "question": "What does a first visit involve?",
+        "answer": "An examination and a straightforward conversation about what, if anything, needs doing — including the option of doing nothing yet. Nothing is started without explaining it to you first."
+      }
+    ],
+    "ctas": [
+      { "label": "Ask us on WhatsApp", "action": "whatsapp", "variant": "outline", "icon": "MessageCircle" }
+    ]
+  },
+
+  "ctaBanner": {
+    "eyebrow": "Next step",
+    "title": "Book the appointment you've been putting off",
+    "description": "Send us a message with what's bothering you — or just book a check-up. We'll find you a time.",
+    "ctas": [
+      { "label": "Message on WhatsApp", "action": "whatsapp", "variant": "primary", "icon": "MessageCircle" },
+      { "label": "Call 0300 0752362", "action": "call", "variant": "outline", "icon": "Phone" }
+    ]
+  },
+
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Come and see us",
+    "description": "First floor, Silver City Plaza, above Soneri Bank — right in G-11 Markaz.",
+    "navLabel": "Contact",
+    "phones": [{ "number": "0300 0752362", "label": "Clinic" }],
+    "whatsapp": {
+      "number": "923000752362",
+      "defaultMessage": "Assalam-o-alaikum Daily Dentals, I would like to book an appointment.",
+      "floatingButton": true
+    },
+    "emails": [],
+    "address": {
+      "line1": "Office #2, 1st Floor, Silver City Plaza",
+      "line2": "Above Soneri Bank, G-11 Markaz",
+      "city": "Islamabad",
+      "postalCode": "44000",
+      "country": "Pakistan"
+    },
+    "mapEmbedUrl": "https://maps.google.com/maps?q=Daily%20Dentals%20Silver%20City%20Plaza%20G-11%20Markaz%20Islamabad&z=16&output=embed",
+    "hours": [
+      { "days": "Monday – Saturday", "opens": "15:30", "closes": "21:00", "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] },
+      { "days": "Sunday", "closed": true, "schemaDays": ["Sunday"] }
+    ],
+    "form": {
+      "enabled": true,
+      "title": "Request an appointment",
+      "description": "Send a few details and we'll confirm a time on WhatsApp.",
+      "mode": "whatsapp",
+      "submitLabel": "Send request",
+      "successMessage": "Thank you — we'll confirm your appointment shortly.",
+      "consentText": "We use your details only to arrange your appointment.",
+      "fields": [
+        { "name": "name", "label": "Full name", "type": "text", "placeholder": "Your name", "required": true, "span": "half" },
+        { "name": "phone", "label": "Phone", "type": "tel", "placeholder": "03XX XXXXXXX", "required": true, "span": "half" },
+        {
+          "name": "treatment",
+          "label": "What can we help with?",
+          "type": "select",
+          "placeholder": "Choose a treatment",
+          "options": ["Check-up & consultation", "Braces & orthodontics", "Scaling & polishing", "Tooth filling", "Something else"],
+          "span": "full"
+        },
+        { "name": "message", "label": "Anything we should know?", "type": "textarea", "placeholder": "Tell us about any pain, anxiety or past treatment.", "span": "full" }
+      ]
+    },
+    "ctas": []
+  },
+
+  "map": { "navLabel": "Find us", "height": 440 },
+
+  "social": [],
+
+  "footer": {
+    "description": "A dental clinic in G-11 Markaz, Islamabad. Braces and orthodontics, scaling and polishing, fillings and routine dental care.",
+    "columns": [
+      {
+        "title": "Treatments",
+        "links": [
+          { "label": "Braces & orthodontics", "action": "scroll", "target": "services" },
+          { "label": "Scaling & polishing", "action": "scroll", "target": "services" },
+          { "label": "Tooth fillings", "action": "scroll", "target": "services" },
+          { "label": "Check-up", "action": "scroll", "target": "services" }
+        ]
+      },
+      {
+        "title": "Clinic",
+        "links": [
+          { "label": "About us", "action": "scroll", "target": "about" },
+          { "label": "Our team", "action": "scroll", "target": "team" },
+          { "label": "Reviews", "action": "scroll", "target": "testimonials" },
+          { "label": "Find us", "action": "directions" }
+        ]
+      }
+    ],
+    "legalLinks": [],
+    "note": "Information on this website is general and does not replace a dental examination."
+  }
+}
