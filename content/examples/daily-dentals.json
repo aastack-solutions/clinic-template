@@ -35,7 +35,7 @@
   },
 
   "seo": {
-    "title": "Daily Dentals — Dental Clinic in G-11 Markaz, Islamabad",
+    "title": "Daily Dentals | Dental Clinic in G-11 Markaz, Islamabad",
     "titleTemplate": "%s | Daily Dentals",
     "description": "Dental clinic in G-11 Markaz, Islamabad. Braces and orthodontics with Dr. Maliha, scaling and polishing, fillings and routine care. Rated 5.0 from 57 Google reviews.",
     "keywords": [
@@ -62,7 +62,7 @@
   "header": {
     "topbar": {
       "enabled": true,
-      "message": "G-11 Markaz, Islamabad — above Soneri Bank, Silver City Plaza",
+      "message": "G-11 Markaz, Islamabad. Above Soneri Bank, Silver City Plaza",
       "showPhone": true,
       "showHours": true
     },
@@ -147,7 +147,7 @@
       {
         "id": "check-up",
         "title": "Check-up & consultation",
-        "description": "An examination and an honest assessment of what — if anything — needs doing.",
+        "description": "An examination and an honest assessment of what, if anything, needs doing.",
         "icon": "Stethoscope",
         "features": ["Full examination", "Clear treatment options", "No pressure to proceed"]
       }
@@ -167,7 +167,7 @@
     "title": "A clinic patients keep coming back to",
     "navLabel": "About",
     "paragraphs": [
-      "Daily Dentals is on the first floor of Silver City Plaza in G-11 Markaz, above Soneri Bank. It is a small clinic, and that is the point — appointments are unrushed and you see the same dentist each time.",
+      "Daily Dentals is on the first floor of Silver City Plaza in G-11 Markaz, above Soneri Bank. It is a small clinic, and that is the point. Appointments are unrushed and you see the same dentist each time.",
       "Read through our reviews and the same words come up: clean, cooperative, and explained clearly. Several patients have been through a full year of monthly orthodontic appointments with us and still describe the experience as consistently good."
     ],
     "images": [
@@ -182,7 +182,7 @@
       {
         "icon": "Info",
         "title": "Nothing happens without an explanation",
-        "description": "You will be told what is being done and why, before it starts — not after."
+        "description": "You will be told what is being done and why, before it starts, not after."
       },
       {
         "icon": "Users",
@@ -206,10 +206,10 @@
     "description": "We would rather let patients describe the clinic than describe it ourselves. These are the themes that come up most.",
     "navLabel": "Why us",
     "items": [
-      { "icon": "Info", "title": "Explained at every step", "description": "The single most mentioned thing in our reviews — you always know what is happening." },
+      { "icon": "Info", "title": "Explained at every step", "description": "The single most mentioned thing in our reviews, and you always know what is happening." },
       { "icon": "Sparkles", "title": "Clean environment", "description": "A modern, well-organised clinic that patients notice the moment they walk in." },
       { "icon": "Users", "title": "Cooperative team", "description": "Polite, patient and willing to take the time your questions need." },
-      { "icon": "Heart", "title": "Comfortable treatment", "description": "Procedures handled carefully — reviews describe them as efficient and painless." },
+      { "icon": "Heart", "title": "Comfortable treatment", "description": "Procedures handled carefully, and reviews describe them as efficient and painless." },
       { "icon": "CalendarCheck", "title": "Consistent over the long term", "description": "Orthodontic patients who visited monthly for over a year report the same experience throughout." },
       { "icon": "MapPin", "title": "Easy to reach", "description": "First floor, Silver City Plaza, right in G-11 Markaz above Soneri Bank." }
     ],
@@ -315,16 +315,16 @@
   "faqs": {
     "eyebrow": "Good to know",
     "title": "Before you visit",
-    "description": "Anything else — message us on WhatsApp and we'll answer.",
+    "description": "Anything else? Message us on WhatsApp and we'll answer.",
     "navLabel": "FAQs",
     "items": [
       {
         "question": "Where exactly is the clinic?",
-        "answer": "Office #2, first floor, Silver City Plaza, G-11 Markaz, Islamabad — directly above Soneri Bank. Use the 'Get directions' link on this page and it will take you to the entrance."
+        "answer": "Office #2, first floor, Silver City Plaza, G-11 Markaz, Islamabad, directly above Soneri Bank. Use the 'Get directions' link on this page and it will take you to the entrance."
       },
       {
         "question": "How do I book an appointment?",
-        "answer": "The quickest way is WhatsApp — send us a message with what you need and a rough time that suits you, and we'll confirm. You can also call the clinic directly on 0300 0752362."
+        "answer": "The quickest way is WhatsApp. Send us a message with what you need and a rough time that suits you, and we'll confirm. You can also call the clinic directly on 0300 0752362."
       },
       {
         "question": "Do you treat braces cases from start to finish?",
@@ -336,7 +336,7 @@
       },
       {
         "question": "What does a first visit involve?",
-        "answer": "An examination and a straightforward conversation about what, if anything, needs doing — including the option of doing nothing yet. Nothing is started without explaining it to you first."
+        "answer": "An examination and a straightforward conversation about what, if anything, needs doing, including the option of doing nothing yet. Nothing is started without explaining it to you first."
       }
     ],
     "ctas": [
@@ -347,7 +347,7 @@
   "ctaBanner": {
     "eyebrow": "Next step",
     "title": "Book the appointment you've been putting off",
-    "description": "Send us a message with what's bothering you — or just book a check-up. We'll find you a time.",
+    "description": "Send us a message with what's bothering you, or just book a check-up. We'll find you a time.",
     "ctas": [
       { "label": "Message on WhatsApp", "action": "whatsapp", "variant": "primary", "icon": "MessageCircle" },
       { "label": "Call 0300 0752362", "action": "call", "variant": "outline", "icon": "Phone" }
@@ -357,7 +357,7 @@
   "contact": {
     "eyebrow": "Get in touch",
     "title": "Come and see us",
-    "description": "First floor, Silver City Plaza, above Soneri Bank — right in G-11 Markaz.",
+    "description": "First floor, Silver City Plaza, above Soneri Bank, right in G-11 Markaz.",
     "navLabel": "Contact",
     "phones": [{ "number": "0300 0752362", "label": "Clinic" }],
     "whatsapp": {
@@ -375,7 +375,7 @@
     },
     "mapEmbedUrl": "https://maps.google.com/maps?q=Daily%20Dentals%20Silver%20City%20Plaza%20G-11%20Markaz%20Islamabad&z=16&output=embed",
     "hours": [
-      { "days": "Monday – Saturday", "opens": "15:30", "closes": "21:00", "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] },
+      { "days": "Monday to Saturday", "opens": "15:30", "closes": "21:00", "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] },
       { "days": "Sunday", "closed": true, "schemaDays": ["Sunday"] }
     ],
     "form": {
@@ -384,7 +384,7 @@
       "description": "Send a few details and we'll confirm a time on WhatsApp.",
       "mode": "whatsapp",
       "submitLabel": "Send request",
-      "successMessage": "Thank you — we'll confirm your appointment shortly.",
+      "successMessage": "Thank you. We'll confirm your appointment shortly.",
       "consentText": "We use your details only to arrange your appointment.",
       "fields": [
         { "name": "name", "label": "Full name", "type": "text", "placeholder": "Your name", "required": true, "span": "half" },
