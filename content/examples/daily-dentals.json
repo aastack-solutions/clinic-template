@@ -7,7 +7,8 @@
     "ADD an email address — none is listed on Google, so the email CTA is currently omitted.",
     "ADD the real domain in seo.siteUrl — currently a placeholder.",
     "ADD the Facebook and Instagram URLs — Google shows both profiles exist but not their handles.",
-    "ADD photos to public/images/daily-dentals/ (hero.jpg, clinic-1.jpg, clinic-2.jpg). Until they exist the site shows branded placeholders.",
+    "REPLACE the stock photos in public/images/daily-dentals/ (hero.jpg, clinic-1.jpg, clinic-2.jpg, braces.jpg) with real photos of this clinic. They are free-licence Pexels images used as a stand-in and they show somebody else's premises.",
+    "ADD dr-maliha.jpg to public/images/daily-dentals/. Left as an initials placeholder on purpose: a stock face under a real dentist's name would mislead patients.",
     "CONFIRM Dr. Maliha's full name, qualifications and years of experience.",
     "CONFIRM the full treatment list — the four services below are the ones evidenced by reviews. Add the rest.",
     "GET written consent from the reviewers before publishing their names, or shorten to first name + initial."
@@ -80,11 +81,11 @@
     "subheadline": "Patients tell us the same thing again and again: they knew exactly what was happening at every step. Braces, scaling, fillings and routine care in a clean, modern clinic in G-11 Markaz.",
     "image": {
       "src": "/images/daily-dentals/hero.jpg",
-      "alt": "The treatment room at Daily Dentals, G-11 Markaz"
+      "alt": "A dental team reviewing a treatment plan with a patient"
     },
     "secondaryImage": {
       "src": "/images/daily-dentals/clinic-1.jpg",
-      "alt": "Reception at Daily Dentals"
+      "alt": "A dental chair in a treatment room"
     },
     "ctas": [
       { "label": "Book on WhatsApp", "action": "whatsapp", "variant": "primary", "icon": "MessageCircle" },
@@ -123,7 +124,7 @@
         "icon": "Smile",
         "image": {
           "src": "/images/daily-dentals/braces.jpg",
-          "alt": "Orthodontic treatment at Daily Dentals"
+          "alt": "A patient smiling with fixed braces"
         },
         "features": ["Monthly adjustment appointments", "Progress explained at every visit", "Treatment with Dr. Maliha"],
         "featured": true,
@@ -170,7 +171,7 @@
       "Read through our reviews and the same words come up: clean, cooperative, and explained clearly. Several patients have been through a full year of monthly orthodontic appointments with us and still describe the experience as consistently good."
     ],
     "images": [
-      { "src": "/images/daily-dentals/clinic-2.jpg", "alt": "Inside Daily Dentals" }
+      { "src": "/images/daily-dentals/clinic-2.jpg", "alt": "A bright dental treatment room" }
     ],
     "highlights": [
       {

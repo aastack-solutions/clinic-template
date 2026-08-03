@@ -7,8 +7,7 @@
     "ADD an email address — none is listed on Google.",
     "ADD the real domain in seo.siteUrl — currently a placeholder.",
     "ADD social media URLs if the clinic has them.",
-    "REPLACE the stock photos in public/images/zain-dental/ (hero.jpg, clinic-1.jpg, clinic-2.jpg, rct.jpg, scaling.jpg, xray.jpg) with real photos of this clinic. They are free-licence Pexels images used as a stand-in and they show somebody else's premises.",
-    "ADD one portrait per doctor to public/images/zain-dental/ (dr-zain.jpg, dr-iqra.jpg, dr-laiba.jpg). Left as initials placeholders on purpose: a stock face under a real doctor's name would mislead patients.",
+    "ADD photos to public/images/zain-dental/ (hero.jpg, clinic-1.jpg, clinic-2.jpg, xray.jpg, plus one portrait per doctor). Until they exist the site shows branded placeholders.",
     "CONFIRM each doctor's full name, qualifications and role — reviews only give first names (Dr. Zain, Dr. Iqra, Dr. Laiba).",
     "CONFIRM prices if you want them shown — no service currently has a price.",
     "GET written consent from the reviewers before publishing their names."
@@ -35,7 +34,7 @@
   },
 
   "seo": {
-    "title": "Zain Dental Clinic | Dentist in G-9 Markaz, Islamabad",
+    "title": "Zain Dental Clinic — Dentist in G-9 Markaz, Islamabad",
     "titleTemplate": "%s | Zain Dental Clinic",
     "description": "Dental clinic in G-9 Markaz, Islamabad. Root canals, implants, scaling and polishing, teeth whitening, crowns, braces and aligners. Rated 4.8 from 63 Google reviews.",
     "keywords": [
@@ -63,7 +62,7 @@
   "header": {
     "topbar": {
       "enabled": true,
-      "message": "G-9 Markaz, Islamabad. Below D Watson, Karachi Company bus stop",
+      "message": "G-9 Markaz, Islamabad — below D Watson, Karachi Company bus stop",
       "showPhone": true,
       "showHours": true
     },
@@ -74,9 +73,9 @@
     "badge": "G-9 Markaz · 4.8 on Google",
     "headline": "Smile better, with treatment that stays",
     "headlineAccent": "painless",
-    "subheadline": "From a scaling and polish to root canals, implants and aligners, all handled in one clinic in G-9 Markaz by a team our patients describe as calm, thorough and easy to talk to.",
-    "image": { "src": "/images/zain-dental/hero.jpg", "alt": "A dentist and assistant in a dental treatment room" },
-    "secondaryImage": { "src": "/images/zain-dental/clinic-1.jpg", "alt": "Dental chair and equipment in a treatment room" },
+    "subheadline": "From a scaling and polish to root canals, implants and aligners — handled in one clinic in G-9 Markaz by a team our patients describe as calm, thorough and easy to talk to.",
+    "image": { "src": "/images/zain-dental/hero.jpg", "alt": "Treatment room at Zain Dental Clinic" },
+    "secondaryImage": { "src": "/images/zain-dental/clinic-1.jpg", "alt": "Reception at Zain Dental Clinic" },
     "ctas": [
       { "label": "Book on WhatsApp", "action": "whatsapp", "variant": "primary", "icon": "MessageCircle" },
       { "label": "Call the clinic", "action": "call", "variant": "outline", "icon": "Phone" }
@@ -105,7 +104,7 @@
   "services": {
     "eyebrow": "Treatments",
     "title": "Everything under one roof",
-    "description": "Routine care, surgical treatment and cosmetic work, so a complex case never has to be sent elsewhere.",
+    "description": "Routine care, surgical treatment and cosmetic work — so a complex case never has to be sent elsewhere.",
     "navLabel": "Services",
     "items": [
       {
@@ -113,7 +112,7 @@
         "title": "Root canal treatment",
         "description": "Endodontic treatment to save a tooth rather than remove it, with a digital X-ray taken first so nothing is guessed at.",
         "icon": "Activity",
-        "image": { "src": "/images/zain-dental/rct.jpg", "alt": "A dentist settling a patient in before treatment" },
+        "image": { "src": "/images/zain-dental/rct.jpg", "alt": "Root canal treatment at Zain Dental Clinic" },
         "features": ["Digital X-ray assessment", "Pain-free technique", "Follow-up call after treatment"],
         "featured": true,
         "cta": { "label": "Ask about RCT", "action": "whatsapp", "variant": "ghost", "message": "Assalam-o-alaikum, I would like to ask about root canal treatment." }
@@ -123,7 +122,7 @@
         "title": "Scaling & polishing",
         "description": "Our most-booked appointment. A full clean to remove plaque and staining, finished with a polish.",
         "icon": "Sparkles",
-        "image": { "src": "/images/zain-dental/scaling.jpg", "alt": "An instrument tray prepared for a scaling appointment" },
+        "image": { "src": "/images/zain-dental/scaling.jpg", "alt": "Scaling and polishing at Zain Dental Clinic" },
         "features": ["Full scaling", "Stain removal & polish", "Aftercare advice"],
         "featured": true,
         "cta": { "label": "Book a clean", "action": "whatsapp", "variant": "ghost", "message": "Assalam-o-alaikum, I would like to book scaling and polishing." }
@@ -182,10 +181,10 @@
     "description": "These are the themes that come up again and again across sixty-three Google reviews.",
     "navLabel": "Why us",
     "items": [
-      { "icon": "Heart", "title": "Painless procedures", "description": "The phrase patients use most often, including for root canals and extractions." },
+      { "icon": "Heart", "title": "Painless procedures", "description": "The phrase patients use most often — including for root canals and extractions." },
       { "icon": "Sparkles", "title": "Clean and modern", "description": "A spotless, well-kept clinic that patients notice and mention by name." },
       { "icon": "Info", "title": "Every step explained", "description": "You are told what is happening before it happens, not asked to just trust it." },
-      { "icon": "Clock", "title": "We run on time", "description": "Appointments start when they are meant to, and patients specifically mention this." },
+      { "icon": "Clock", "title": "We run on time", "description": "Appointments start when they are meant to — patients specifically mention this." },
       { "icon": "Users", "title": "A welcoming team", "description": "Polite, supportive and unhurried with questions." },
       { "icon": "CalendarDays", "title": "Open on Sundays", "description": "So people who cannot take time off during the week still get seen." }
     ],
@@ -241,9 +240,9 @@
     "items": [
       {
         "name": "Digital X-ray imaging",
-        "description": "A modern digital X-ray unit in the clinic means the tooth is assessed properly before any treatment starts, which is a large part of why our root canal patients describe the process as smooth.",
+        "description": "A modern digital X-ray unit in the clinic means the tooth is assessed properly before any treatment starts — which is a large part of why our root canal patients describe the process as smooth.",
         "icon": "Scan",
-        "image": { "src": "/images/zain-dental/xray.jpg", "alt": "A dentist reviewing a panoramic dental X-ray on screen" },
+        "image": { "src": "/images/zain-dental/xray.jpg", "alt": "Digital X-ray unit at Zain Dental Clinic" },
         "benefits": [
           "Image available immediately, in the room",
           "Diagnosis is shown to you, not just described",
@@ -258,11 +257,11 @@
     "title": "A full-service clinic in G-9 Markaz",
     "navLabel": "About",
     "paragraphs": [
-      "Zain Dental Clinic is on Rohtas Road in G-9 Markaz, below D Watson near the Karachi Company bus stop. It is easy to reach and easy to park near, two things that matter when you are coming back for a course of treatment.",
+      "Zain Dental Clinic is on Rohtas Road in G-9 Markaz, below D Watson near the Karachi Company bus stop. It is easy to reach and easy to park near — two things that matter when you are coming back for a course of treatment.",
       "Nine treatments are offered under one roof, from a routine clean through to implants and surgical impactions. That means a case which turns out to be more complicated than expected stays with the same team rather than being referred on."
     ],
     "images": [
-      { "src": "/images/zain-dental/clinic-2.jpg", "alt": "A dental treatment light and instruments" }
+      { "src": "/images/zain-dental/clinic-2.jpg", "alt": "Inside Zain Dental Clinic" }
     ],
     "highlights": [
       { "icon": "Layers", "title": "Nine treatments in one place", "description": "Routine, surgical and cosmetic dentistry all handled here." },
@@ -287,7 +286,7 @@
       {
         "id": "z-amna",
         "name": "Amna Islam",
-        "quote": "I went for RCT today. Dr. Zain is so professional and decent, and it was a painless process. I have had root canals many times before but this was my best experience. They have a modern X-ray machine which helped a lot during the process.",
+        "quote": "I went for RCT today. Dr. Zain is so professional and decent — it was a painless process. I have had root canals many times before but this was my best experience. They have a modern X-ray machine which helped a lot during the process.",
         "rating": 5,
         "treatment": "Root canal treatment"
       },
@@ -315,7 +314,7 @@
       {
         "id": "z-shoaib",
         "name": "Shoaib Hussain",
-        "quote": "I had scaling and polishing done by Dr. Laiba. She is a very hard-working and skilled dentist. She diagnosed my problem accurately and gave me the right treatment. I am satisfied with my treatment.",
+        "quote": "I had scaling and polishing done by Dr. Laiba. She is a very hard-working and skilled dentist — she diagnosed my problem accurately and gave me the right treatment. I am satisfied with my treatment.",
         "rating": 5,
         "treatment": "Scaling & polishing"
       },
@@ -336,7 +335,7 @@
       {
         "id": "z-faisal",
         "name": "Faisal Abbasi",
-        "quote": "Dr. Zain is a top-notch dentist, highly skilled, professional and compassionate. He took the time to explain everything clearly and make sure I was comfortable throughout the entire process.",
+        "quote": "Dr. Zain is a top-notch dentist — highly skilled, professional, and compassionate. He took the time to explain everything clearly and make sure I was comfortable throughout the entire process.",
         "rating": 5,
         "treatment": "General dentistry"
       }
@@ -350,7 +349,7 @@
     "items": [
       {
         "question": "Where is the clinic?",
-        "answer": "On Rohtas Road in G-9 Markaz, Islamabad, below D Watson and near the Karachi Company bus stop. Use the 'Get directions' link on this page and it will take you straight there."
+        "answer": "On Rohtas Road in G-9 Markaz, Islamabad — below D Watson, near the Karachi Company bus stop. Use the 'Get directions' link on this page and it will take you straight there."
       },
       {
         "question": "Are you open on Sunday?",
@@ -362,7 +361,7 @@
       },
       {
         "question": "How do I book?",
-        "answer": "WhatsApp is quickest. Send us a message with what you need and we'll confirm a time. You can also call the clinic on 0314 5477439."
+        "answer": "WhatsApp is quickest — send us a message with what you need and we'll confirm a time. You can also call the clinic on 0314 5477439."
       },
       {
         "question": "Do you do braces and aligners?",
@@ -391,7 +390,7 @@
   "contact": {
     "eyebrow": "Get in touch",
     "title": "Come and see us",
-    "description": "Rohtas Road, G-9 Markaz, below D Watson and near the Karachi Company bus stop.",
+    "description": "Rohtas Road, G-9 Markaz — below D Watson, near the Karachi Company bus stop.",
     "navLabel": "Contact",
     "phones": [{ "number": "0314 5477439", "label": "Clinic" }],
     "whatsapp": {
@@ -408,7 +407,7 @@
     },
     "mapEmbedUrl": "https://maps.google.com/maps?q=Zain%20Dental%20Clinic%20G-9%20Markaz%20Islamabad&z=16&output=embed",
     "hours": [
-      { "days": "Monday to Saturday", "opens": "10:00", "closes": "20:00", "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] },
+      { "days": "Monday – Saturday", "opens": "10:00", "closes": "20:00", "schemaDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] },
       { "days": "Sunday", "opens": "12:00", "closes": "18:00", "schemaDays": ["Sunday"] }
     ],
     "form": {
@@ -417,7 +416,7 @@
       "description": "Send a few details and we'll confirm a time on WhatsApp.",
       "mode": "whatsapp",
       "submitLabel": "Send request",
-      "successMessage": "Thank you. We'll confirm your appointment shortly.",
+      "successMessage": "Thank you — we'll confirm your appointment shortly.",
       "consentText": "We use your details only to arrange your appointment.",
       "fields": [
         { "name": "name", "label": "Full name", "type": "text", "placeholder": "Your name", "required": true, "span": "half" },
