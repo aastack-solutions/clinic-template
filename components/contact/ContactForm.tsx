@@ -80,7 +80,7 @@ export function ContactForm({ config, clinicName, whatsappNumber, email }: Conta
 
   const composeMessage = () =>
     [
-      `New appointment request — ${clinicName}`,
+      `New appointment request for ${clinicName}`,
       '',
       ...fields
         .map((field) => {
@@ -112,7 +112,7 @@ export function ContactForm({ config, clinicName, whatsappNumber, email }: Conta
         window.open(whatsappHref(whatsappNumber, composeMessage()), '_blank', 'noopener,noreferrer');
       } else {
         if (!email) throw new Error('No email address configured.');
-        window.location.href = mailHref(email, `Appointment request — ${clinicName}`, composeMessage());
+        window.location.href = mailHref(email, `Appointment request for ${clinicName}`, composeMessage());
       }
 
       setStatus('success');

@@ -1,5 +1,6 @@
 import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 
 import { SOCIAL_ICONS, SOCIAL_LABELS } from '@/lib/icons';
 import { cn, formatAddress, formatHours, hasItems, mailHref, resolveCta, telHref } from '@/lib/utils';
@@ -9,14 +10,25 @@ import { Logo } from './Logo';
 
 /**
  * Footer assembled entirely from the content file. Link columns, legal links,
- * hours, socials and the copyright line each disappear when their data is absent,
- * and the grid re-flows so the remaining columns stay balanced.
+ * hours, socials and the copyright line each disappear when their data is absent.
+ *
+ * The column track list is built from the actual number of link columns, so the
+ * row stays balanced whether the clinic supplies one column or four: a wide brand
+ * column, one even track per link column, then a wider contact column.
  */
 export function Footer({ clinic }: { clinic: Clinic }) {
   const { footer, contact, social } = clinic;
   const address = formatAddress(contact.address);
   const year = new Date().getFullYear();
   const columns = footer.columns.filter((column) => hasItems(column.links));
+
+  const gridStyle = {
+    '--footer-columns': [
+      'minmax(0, 1.6fr)',
+      ...columns.map(() => 'minmax(0, 1fr)'),
+      'minmax(0, 1.5fr)',
+    ].join(' '),
+  } as CSSProperties;
 
   return (
     <footer className="relative overflow-hidden bg-ink text-white/70">
@@ -27,13 +39,16 @@ export function Footer({ clinic }: { clinic: Clinic }) {
 
       <div className="relative mx-auto max-w-7xl px-5 pt-18 pb-10 sm:px-8 lg:px-12 lg:pt-22">
         <div
-          className={cn(
-            'grid gap-12 lg:gap-10',
-            columns.length > 0 ? 'lg:grid-cols-[1.4fr_repeat(auto-fit,minmax(9rem,1fr))]' : 'lg:grid-cols-2',
-          )}
+          style={gridStyle}
+          className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:items-start lg:gap-x-12 lg:[grid-template-columns:var(--footer-columns)]"
         >
-          <div className="max-w-sm">
-            <Logo name={clinic.clinic.name} tagline={clinic.clinic.tagline} logo={clinic.clinic.logo?.dark ?? clinic.clinic.logo?.light} tone="dark" />
+          <div className="sm:col-span-2 lg:col-span-1 lg:max-w-xs">
+            <Logo
+              name={clinic.clinic.name}
+              tagline={clinic.clinic.tagline}
+              logo={clinic.clinic.logo?.dark ?? clinic.clinic.logo?.light}
+              tone="dark"
+            />
 
             {footer.description ?? clinic.clinic.shortDescription ? (
               <p className="mt-6 text-sm leading-relaxed text-white/55">
@@ -65,7 +80,7 @@ export function Footer({ clinic }: { clinic: Clinic }) {
 
           {columns.map((column) => (
             <nav key={column.title} aria-label={column.title}>
-              <h2 className="font-display text-sm font-medium tracking-[0.02em] text-white">{column.title}</h2>
+              <FooterHeading>{column.title}</FooterHeading>
               <ul className="mt-5 flex flex-col gap-3">
                 {column.links.map((link) => {
                   const resolved = resolveCta(link, clinic);
@@ -83,9 +98,7 @@ export function Footer({ clinic }: { clinic: Clinic }) {
           ))}
 
           <div>
-            <h2 className="font-display text-sm font-medium tracking-[0.02em] text-white">
-              {contact.title ?? 'Visit us'}
-            </h2>
+            <FooterHeading>{contact.title ?? 'Visit us'}</FooterHeading>
             <ul className="mt-5 flex flex-col gap-4 text-sm">
               {address ? (
                 <li className="flex gap-3">
@@ -113,11 +126,11 @@ export function Footer({ clinic }: { clinic: Clinic }) {
               {hasItems(contact.hours) ? (
                 <li className="flex gap-3">
                   <Clock className="mt-0.5 size-4 shrink-0 text-primary-300" aria-hidden="true" />
-                  <ul className="flex flex-col gap-1.5 text-white/60">
+                  <ul className="flex w-full flex-col gap-2.5 text-white/60">
                     {contact.hours.map((entry) => (
-                      <li key={entry.days} className="flex flex-wrap gap-x-2">
-                        <span className="text-white/75">{entry.days}</span>
-                        <span className="tabular-nums">{formatHours(entry)}</span>
+                      <li key={entry.days}>
+                        <span className="block text-white/75">{entry.days}</span>
+                        <span className="block tabular-nums">{formatHours(entry)}</span>
                       </li>
                     ))}
                   </ul>
@@ -127,7 +140,7 @@ export function Footer({ clinic }: { clinic: Clinic }) {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-7 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-7 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
           <p>
             {footer.copyright ?? `© ${year} ${clinic.clinic.legalName ?? clinic.clinic.name}. All rights reserved.`}
           </p>
@@ -155,6 +168,11 @@ export function Footer({ clinic }: { clinic: Clinic }) {
       </div>
     </footer>
   );
+}
+
+/** Small uppercase column label, so every column head reads at the same weight. */
+function FooterHeading({ children }: { children: React.ReactNode }) {
+  return <h2 className="text-[0.6875rem] font-semibold tracking-[0.18em] text-white/45 uppercase">{children}</h2>;
 }
 
 function FooterLink({

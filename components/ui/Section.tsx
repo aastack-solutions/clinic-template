@@ -148,7 +148,7 @@ export function SectionHeading({
   );
 }
 
-/** Small uppercase label with a rule — the section "kicker". */
+/** Small uppercase label above a section title, the section "kicker". */
 export function Eyebrow({
   children,
   tone = 'light',
@@ -162,15 +162,11 @@ export function Eyebrow({
     <Reveal direction="none">
       <p
         className={cn(
-          'inline-flex items-center gap-2.5 text-[0.6875rem] font-semibold uppercase tracking-[0.22em]',
+          'text-[0.6875rem] font-semibold uppercase tracking-[0.22em]',
           tone === 'dark' ? 'text-accent-500' : 'text-primary-700',
           className,
         )}
       >
-        <span
-          aria-hidden="true"
-          className={cn('h-px w-7', tone === 'dark' ? 'bg-accent-500/60' : 'bg-primary-700/40')}
-        />
         {children}
       </p>
     </Reveal>

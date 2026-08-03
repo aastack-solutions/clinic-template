@@ -100,7 +100,7 @@ export function resolveCta(cta: Cta | undefined, clinic: Clinic): ResolvedCta | 
     case 'email': {
       const email = contact.emails[0]?.address;
       return email
-        ? { ...base, href: mailHref(email, `Appointment enquiry — ${clinic.clinic.name}`, cta.message), external: false }
+        ? { ...base, href: mailHref(email, `Appointment enquiry for ${clinic.clinic.name}`, cta.message), external: false }
         : null;
     }
     case 'directions': {
@@ -141,7 +141,7 @@ export function formatTime(value: string | undefined, locale = 'en-US') {
 
 export function formatHours(entry: OpeningHours, locale?: string) {
   if (entry.closed || (!entry.opens && !entry.closes)) return 'Closed';
-  return `${formatTime(entry.opens, locale)} – ${formatTime(entry.closes, locale)}`;
+  return `${formatTime(entry.opens, locale)} to ${formatTime(entry.closes, locale)}`;
 }
 
 /** Alt text is optional in the content file; derive something meaningful. */

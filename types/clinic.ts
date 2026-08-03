@@ -154,7 +154,7 @@ export const SeoSchema = z.object({
 /* -------------------------------------------------------------------------- */
 
 export const OpeningHoursSchema = z.object({
-  /** Human label, e.g. `"Monday – Friday"`. */
+  /** Human label, e.g. `"Monday to Friday"`. */
   days: z.string().min(1),
   /** 24h `"09:00"`. Omit both when `closed` is true. */
   opens: z.string().optional(),
@@ -205,7 +205,7 @@ export const ContactSchema = z.object({
       mode: z.enum(['whatsapp', 'email', 'endpoint']).default('whatsapp'),
       endpointUrl: z.string().url().optional(),
       submitLabel: z.string().default('Request appointment'),
-      successMessage: z.string().default('Thank you — we will confirm your appointment shortly.'),
+      successMessage: z.string().default('Thank you. We will confirm your appointment shortly.'),
       consentText: z.string().optional(),
       /** Rendered in order. `select` requires `options`. */
       fields: NonEmpty(
